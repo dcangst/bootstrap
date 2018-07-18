@@ -40,3 +40,35 @@
 @import "carousel";
 @import "utilities";
 @import "print";
+
+body {
+  padding-top: 58px;
+}
+
+.date-header {
+  padding-top: .5*$spacer;
+  background: $gray-500;
+}
+
+.fablog-card {
+  width: 12rem;
+  min-height: 12rem;
+  margin: $spacer;
+}
+
+.fablog-closed{
+  filter: opacity(50%);
+}
+
+// .form-group.is-invalid > .invalid-feedback {
+//   display: block;
+// }
+
+.invalid-feedback {
+  display: block;
+}
+
+
+.small-int-field {
+  max-width: 150px;
+}

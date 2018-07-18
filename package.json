@@ -80,7 +80,10 @@
     "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
     "watch-css-docs": "nodemon --watch site/docs/4.1/assets/scss/ --ext scss --exec \"npm run css-docs\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm run js-compile\"",
-    "watch-js-docs": "nodemon --watch site/docs/4.1/assets/js/src/ --ext js --exec \"npm run js-docs\""
+    "watch-js-docs": "nodemon --watch site/docs/4.1/assets/js/src/ --ext js --exec \"npm run js-docs\"",
+    "js-copy": "cp dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.js node_modules/jquery/dist/jquery.min.map node_modules/popper.js/dist/umd/popper.min.js node_modules/popper.js/dist/umd/popper.min.js.map ../digitalFablog/static/js/",
+    "css-copy": "cp dist/css/bootstrap.min.css ../digitalFablog/static/css/df-bootstrap.min.css",
+    "css-copy2": "cp dist/css/bootstrap.min.css.map ../digitalFablog/static/css/bootstrap.min.css.map"
   },
   "style": "dist/css/bootstrap.css",
   "sass": "scss/bootstrap.scss",
